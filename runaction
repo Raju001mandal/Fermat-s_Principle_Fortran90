@@ -1,0 +1,75 @@
+set terminal wxt background 'black'
+unset key
+unset tics
+unset grid
+unset border
+
+unset colorbox
+set xrange[-12:12]
+set yrange[-1.0:16]
+
+
+do for [n=1:190] {
+
+          
+     set multiplot layout 1,1
+     
+    
+     set arrow from -30,-0.5 to 30,-0.5 filled back nohead lw 5 lc rgb "white"
+       
+     plot 'action.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action2.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "white" ,\
+          'action2.dat' using 1:2 every ::1::n with l dt 3 lw 2 lc rgb "white" ,\
+          'action3.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action3.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action4.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action4.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action5.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action5.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action6.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action6.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action7.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action7.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action8.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action8.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action9.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action9.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action10.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action10.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action11.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action11.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action12.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action12.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action13.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action13.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action14.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action14.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action15.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action15.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action16.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action16.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action17.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action17.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action18.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action18.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action19.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action19.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action20.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action20.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action21.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action21.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action22.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action22.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          'action23.dat' using 1:2 every ::n::n with p pt 7 ps 1 lc rgb "yellow" ,\
+          'action23.dat' using 1:2 every ::1::n with l dt 3 lw 1 lc rgb "yellow" ,\
+          "<echo '-10 10'" w p pt 7 ps 3 lc rgb "white" ,\
+          "<echo '10.1 15'" w p pt 7 ps 3 lc rgb "white"  
+          
+     
+     unset multiplot
+     
+     
+   
+}
+
